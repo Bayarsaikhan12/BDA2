@@ -20,3 +20,15 @@ window.onmousemove = (e) =>{
 	cursor2.style.top = e.pageY + 'px';
 	cursor2.style.left = e.pageX + 'px';
 }
+document.querySelectorAll('a').forEach(links =>{
+    
+    links.onmousemove = () =>{
+    	cursor1.classlist.add('active');
+    	cursor2.classlist.add('active');
+    }
+
+    links.onmousemove = () =>{
+    	cursor1.classlist.remove('active');
+    	cursor2.classlist.remove('active');
+    }
+});
